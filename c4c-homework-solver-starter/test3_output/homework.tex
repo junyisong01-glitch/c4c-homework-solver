@@ -1,0 +1,235 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Linear Algebra}
+\lhead{Junyi Song}
+\rfoot{Page \thepage}
+
+\newcommand{\problem}[1]{\subsection*{Problem #1}}
+\newcommand{\solution}{\paragraph{Solution.}}
+
+\definecolor{solutioncolor}{RGB}{0, 100, 0}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\bfseries Homework Solutions} \\[0.5em]
+    {\large Linear Algebra} \\[0.3em]
+    Junyi Song \quad | \quad 2026-10-11
+\end{center}
+
+\hrule
+\vspace{1em}
+\problem{Q1}
+
+What does it mean for a square matrix to be invertible? State a condition on the determinant.
+
+\textit{\color{red} Unsolved: Conceptual question requires LLM solver (student extension point).}
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{Q2}
+
+What is an eigenvalue of a matrix $A$? Write the defining equation.
+
+\textit{\color{red} Unsolved: Conceptual question requires LLM solver (student extension point).}
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{P1}
+
+Compute the determinant of the matrix
+
+$$\begin{vmatrix}1 & 2\\3 & 4\end{vmatrix}$$
+
+\solution
+
+$\det \left[\begin{matrix}1 & 2\\3 & 4\end{matrix}\right] = -2$
+
+determinant $= -2$
+
+\textbf{Answer:}
+\[\boxed{-2}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{P2}
+
+Find the inverse of the matrix
+
+$$\begin{bmatrix}2 & 1\\1 & 3\end{bmatrix}$$
+
+\solution
+
+$\left(\left[\begin{matrix}2 & 1\\1 & 3\end{matrix}\right]\right)^{-1} = \left[\begin{matrix}\frac{3}{5} & - \frac{1}{5}\\- \frac{1}{5} & \frac{2}{5}\end{matrix}\right]$
+
+\textbf{Answer:}
+\[\boxed{\left[\begin{matrix}\frac{3}{5} & - \frac{1}{5}\\- \frac{1}{5} & \frac{2}{5}\end{matrix}\right]}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{P3}
+
+Find the eigenvalues and corresponding eigenvectors of the matrix
+
+$$\begin{bmatrix}2 & 1\\1 & 2\end{bmatrix}$$
+
+\solution
+
+eigenvalue $\lambda = 1$ (multiplicity 1)
+
+corresponding eigenvector $= \left[\begin{matrix}-1\\1\end{matrix}\right]$
+
+eigenvalue $\lambda = 3$ (multiplicity 1)
+
+corresponding eigenvector $= \left[\begin{matrix}1\\1\end{matrix}\right]$
+
+\textbf{Answer:}
+\[\boxed{\lambda = 3,\quad \lambda = 1}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{P4}
+
+Solve the linear system $A\mathbf{x} = \mathbf{b}$ where
+
+$$A = \begin{bmatrix}2 & 1\\1 & 3\end{bmatrix},\qquad \mathbf{b} = \begin{bmatrix}5\\7\end{bmatrix}$$
+
+\solution
+
+solution vector $= \left( \frac{8}{5}, \  \frac{9}{5}\right)$
+
+\textbf{Answer:}
+\[\boxed{\left\{\left( \frac{8}{5}, \  \frac{9}{5}\right)\right\}}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{P5}
+
+Compute the dot product of the vectors
+
+$$\mathbf{u} = \langle 1, 2, 3 \rangle,\qquad \mathbf{v} = \langle 4, 5, 6 \rangle$$
+
+\solution
+
+dot product $= 32$
+
+\textbf{Answer:}
+\[\boxed{32}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{P6}
+
+Compute the cross product of the vectors
+
+$$\mathbf{u} = \langle 1, 0, 0 \rangle,\qquad \mathbf{v} = \langle 0, 1, 0 \rangle$$
+
+\solution
+
+$u \times v = \left[\begin{matrix}0\\0\\1\end{matrix}\right]$
+
+\textbf{Answer:}
+\[\boxed{\left[\begin{matrix}0\\0\\1\end{matrix}\right]}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{P7}
+
+Find the transpose of the matrix
+
+$$\begin{bmatrix}1 & 2 & 3\\4 & 5 & 6\end{bmatrix}$$
+
+\solution
+
+$\left[\begin{matrix}1 & 2 & 3\\4 & 5 & 6\end{matrix}\right]^{T} = \left[\begin{matrix}1 & 4\\2 & 5\\3 & 6\end{matrix}\right]$
+
+\textbf{Answer:}
+\[\boxed{\left[\begin{matrix}1 & 4\\2 & 5\\3 & 6\end{matrix}\right]}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{P8}
+
+Multiply the matrices
+
+$$\begin{bmatrix}1 & 2\\3 & 4\end{bmatrix}\begin{bmatrix}5 & 6\\7 & 8\end{bmatrix}$$
+
+\solution
+
+$\left[\begin{matrix}1 & 2\\3 & 4\end{matrix}\right] \cdot \left[\begin{matrix}5 & 6\\7 & 8\end{matrix}\right] = \left[\begin{matrix}19 & 22\\43 & 50\end{matrix}\right]$
+
+\textbf{Answer:}
+\[\boxed{\left[\begin{matrix}19 & 22\\43 & 50\end{matrix}\right]}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{P9}
+
+Find the rank of the matrix
+
+$$\begin{bmatrix}1 & 2\\2 & 4\end{bmatrix}$$
+
+\solution
+
+$\operatorname{rank}\left[\begin{matrix}1 & 2\\2 & 4\end{matrix}\right] = 1$
+
+\textbf{Answer:}
+\[\boxed{1}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{P10}
+
+Find the trace of the matrix
+
+$$\begin{bmatrix}2 & 1\\1 & 3\end{bmatrix}$$
+
+\solution
+
+$\operatorname{tr}\left[\begin{matrix}2 & 1\\1 & 3\end{matrix}\right] = 5$
+
+\textbf{Answer:}
+\[\boxed{5}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+
+\vspace{2em}
+\noindent\textit{Auto-generated: 10/12 problems solved by SymPy.}
+\end{document}

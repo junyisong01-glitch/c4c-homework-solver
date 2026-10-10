@@ -1,0 +1,13 @@
+# 环境与缓存（不提交）
+.tectonic-dl/
+.venv/
+output/
+__pycache__/
+*.pyc
+.DS_Store
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk

@@ -1,0 +1,148 @@
+[
+  {
+    "problem_id": "Q1",
+    "problem_text": "What does it mean for a square matrix to be invertible? State a condition on the determinant.",
+    "solved": false,
+    "steps": [],
+    "answer": null,
+    "answer_latex": "",
+    "reason": "Conceptual question requires LLM solver (student extension point).",
+    "solver": "none",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "Q2",
+    "problem_text": "What is an eigenvalue of a matrix $A$? Write the defining equation.",
+    "solved": false,
+    "steps": [],
+    "answer": null,
+    "answer_latex": "",
+    "reason": "Conceptual question requires LLM solver (student extension point).",
+    "solver": "none",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "P1",
+    "problem_text": "Compute the determinant of the matrix\n\n$$\\begin{vmatrix}1 & 2\\\\3 & 4\\end{vmatrix}$$",
+    "solved": true,
+    "steps": [
+      "$\\det \\left[\\begin{matrix}1 & 2\\\\3 & 4\\end{matrix}\\right] = -2$",
+      "determinant $= -2$"
+    ],
+    "answer": "-2",
+    "answer_latex": "-2",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "P2",
+    "problem_text": "Find the inverse of the matrix\n\n$$\\begin{bmatrix}2 & 1\\\\1 & 3\\end{bmatrix}$$",
+    "solved": true,
+    "steps": [
+      "$\\left(\\left[\\begin{matrix}2 & 1\\\\1 & 3\\end{matrix}\\right]\\right)^{-1} = \\left[\\begin{matrix}\\frac{3}{5} & - \\frac{1}{5}\\\\- \\frac{1}{5} & \\frac{2}{5}\\end{matrix}\\right]$"
+    ],
+    "answer": "Matrix([[3/5, -1/5], [-1/5, 2/5]])",
+    "answer_latex": "\\left[\\begin{matrix}\\frac{3}{5} & - \\frac{1}{5}\\\\- \\frac{1}{5} & \\frac{2}{5}\\end{matrix}\\right]",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "P3",
+    "problem_text": "Find the eigenvalues and corresponding eigenvectors of the matrix\n\n$$\\begin{bmatrix}2 & 1\\\\1 & 2\\end{bmatrix}$$",
+    "solved": true,
+    "steps": [
+      "eigenvalue $\\lambda = 1$ (multiplicity 1)",
+      "corresponding eigenvector $= \\left[\\begin{matrix}-1\\\\1\\end{matrix}\\right]$",
+      "eigenvalue $\\lambda = 3$ (multiplicity 1)",
+      "corresponding eigenvector $= \\left[\\begin{matrix}1\\\\1\\end{matrix}\\right]$"
+    ],
+    "answer": "3 (multiplicity 1), 1 (multiplicity 1)",
+    "answer_latex": "\\lambda = 3,\\quad \\lambda = 1",
+    "solver": "sympy_matrix",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "P4",
+    "problem_text": "Solve the linear system $A\\mathbf{x} = \\mathbf{b}$ where\n\n$$A = \\begin{bmatrix}2 & 1\\\\1 & 3\\end{bmatrix},\\qquad \\mathbf{b} = \\begin{bmatrix}5\\\\7\\end{bmatrix}$$",
+    "solved": true,
+    "steps": [
+      "solution vector $= \\left( \\frac{8}{5}, \\  \\frac{9}{5}\\right)$"
+    ],
+    "answer": "{(8/5, 9/5)}",
+    "answer_latex": "\\left\\{\\left( \\frac{8}{5}, \\  \\frac{9}{5}\\right)\\right\\}",
+    "solver": "sympy_matrix",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "P5",
+    "problem_text": "Compute the dot product of the vectors\n\n$$\\mathbf{u} = \\langle 1, 2, 3 \\rangle,\\qquad \\mathbf{v} = \\langle 4, 5, 6 \\rangle$$",
+    "solved": true,
+    "steps": [
+      "dot product $= 32$"
+    ],
+    "answer": "32",
+    "answer_latex": "32",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "P6",
+    "problem_text": "Compute the cross product of the vectors\n\n$$\\mathbf{u} = \\langle 1, 0, 0 \\rangle,\\qquad \\mathbf{v} = \\langle 0, 1, 0 \\rangle$$",
+    "solved": true,
+    "steps": [
+      "$u \\times v = \\left[\\begin{matrix}0\\\\0\\\\1\\end{matrix}\\right]$"
+    ],
+    "answer": "Matrix([[0], [0], [1]])",
+    "answer_latex": "\\left[\\begin{matrix}0\\\\0\\\\1\\end{matrix}\\right]",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "P7",
+    "problem_text": "Find the transpose of the matrix\n\n$$\\begin{bmatrix}1 & 2 & 3\\\\4 & 5 & 6\\end{bmatrix}$$",
+    "solved": true,
+    "steps": [
+      "$\\left[\\begin{matrix}1 & 2 & 3\\\\4 & 5 & 6\\end{matrix}\\right]^{T} = \\left[\\begin{matrix}1 & 4\\\\2 & 5\\\\3 & 6\\end{matrix}\\right]$"
+    ],
+    "answer": "Matrix([[1, 4], [2, 5], [3, 6]])",
+    "answer_latex": "\\left[\\begin{matrix}1 & 4\\\\2 & 5\\\\3 & 6\\end{matrix}\\right]",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "P8",
+    "problem_text": "Multiply the matrices\n\n$$\\begin{bmatrix}1 & 2\\\\3 & 4\\end{bmatrix}\\begin{bmatrix}5 & 6\\\\7 & 8\\end{bmatrix}$$",
+    "solved": true,
+    "steps": [
+      "$\\left[\\begin{matrix}1 & 2\\\\3 & 4\\end{matrix}\\right] \\cdot \\left[\\begin{matrix}5 & 6\\\\7 & 8\\end{matrix}\\right] = \\left[\\begin{matrix}19 & 22\\\\43 & 50\\end{matrix}\\right]$"
+    ],
+    "answer": "Matrix([[19, 22], [43, 50]])",
+    "answer_latex": "\\left[\\begin{matrix}19 & 22\\\\43 & 50\\end{matrix}\\right]",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "P9",
+    "problem_text": "Find the rank of the matrix\n\n$$\\begin{bmatrix}1 & 2\\\\2 & 4\\end{bmatrix}$$",
+    "solved": true,
+    "steps": [
+      "$\\operatorname{rank}\\left[\\begin{matrix}1 & 2\\\\2 & 4\\end{matrix}\\right] = 1$"
+    ],
+    "answer": "1",
+    "answer_latex": "1",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "P10",
+    "problem_text": "Find the trace of the matrix\n\n$$\\begin{bmatrix}2 & 1\\\\1 & 3\\end{bmatrix}$$",
+    "solved": true,
+    "steps": [
+      "$\\operatorname{tr}\\left[\\begin{matrix}2 & 1\\\\1 & 3\\end{matrix}\\right] = 5$"
+    ],
+    "answer": "5",
+    "answer_latex": "5",
+    "solver": "sympy",
+    "sub_solutions": []
+  }
+]
